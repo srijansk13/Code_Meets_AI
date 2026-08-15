@@ -2,6 +2,8 @@
 
 > **You bring the curiosity. We'll see what happens. 👀**
 
+🌐 **Live Demo:** [https://code-meets-ai.vercel.app/](https://code-meets-ai.vercel.app/)
+
 A fun, interactive event website built for **Code Meets AI** — a student-focused event designed to introduce beginners to coding, Generative AI, web development, prompt engineering, debugging, and AI-assisted building without the usual boring lecture energy.
 
 ---
@@ -178,33 +180,34 @@ Code_Meets_AI/
 ├── next.config.ts
 ├── tsconfig.json
 └── README.md
----
 
-##🎨 Design Philosophy
+## 🎨 Design Philosophy
 
 The website intentionally avoids the typical:
 
-"Welcome to our technical workshop 🤓"
+> "Welcome to our technical workshop 🤓"
 
 approach.
 
 Instead, the design aims to communicate:
 
-Curiosity → Experiment → Build → Break → Debug → Learn → Have Fun
+`Curiosity` → `Experiment` → `Build` → `Break` → `Debug` → `Learn` → `Have Fun`
 
 The visual language combines:
 
-Dark futuristic aesthetics
-Glassmorphism
-AI-inspired visuals
-Cinematic transitions
-Playful micro-interactions
-Experimental layouts
-Developer culture references
+- Dark futuristic aesthetics
+- Glassmorphism
+- AI-inspired visuals
+- Cinematic transitions
+- Playful micro-interactions
+- Experimental layouts
+- Developer culture references
 
 Because learning technology doesn't have to feel boring.
 
-💀 The Philosophy
+---
+
+## 💀 The Philosophy
 
 You don't need to know everything before you start.
 
@@ -212,22 +215,28 @@ You just need to be curious enough to try.
 
 And maybe comfortable hearing:
 
-"It was working 2 minutes ago."
+> **"It was working 2 minutes ago."**
 
-👨‍💻 Built For
+---
 
-Code Meets AI
+## 👨‍💻 Built For
+
+**Code Meets AI**
 
 A student-focused event bringing together:
 
-CODE + AI + A LITTLE BIT OF CHAOS 💀
+**CODE + AI + A LITTLE BIT OF CHAOS 💀**
 
-📜 License
+---
+
+## 📜 License
 
 This project is created for the Code Meets AI event.
 
 All event-specific branding, graphics, content, and assets belong to their respective owners.
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If you like the project, consider giving the repository a ⭐ on GitHub.
