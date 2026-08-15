@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Code Meets AI — A Little Bit of Chaos 💀
 
-## Getting Started
+> **You bring the curiosity. We'll see what happens. 👀**
 
-First, run the development server:
+A fun, interactive event website built for **Code Meets AI** — a student-focused event designed to introduce beginners to coding, Generative AI, web development, prompt engineering, debugging, and AI-assisted building without the usual boring lecture energy.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 What is Code Meets AI?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Code Meets AI** is a hands-on technical event where participants get to experiment with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🤖 Generative AI
+- ✍️ Prompt Engineering
+- 💻 Coding
+- 🌐 Web Development
+- 🐛 Debugging
+- ⚡ AI-Assisted Coding
+- 🧠 Problem Solving
+- 🛠️ Building with AI
+- 🤝 Teamwork
+- 🎤 Presenting Ideas
 
-## Learn More
+No long lectures.
 
-To learn more about Next.js, take a look at the following resources:
+No complicated prerequisites.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Just curiosity, experimentation, and a little bit of chaos. 💀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 Who Is This For?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Especially for students who:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Have never coded before
+- Are curious about AI
+- Want to see what developers actually do
+- Want to build something instead of just watching slides
+- Are wondering how AI can help with coding
+- Or simply showed up because **"my friend forced me to come, you are welcome."** 😂
+
+> **No laptop and charger needed — just be curious and interested.**
+
+---
+
+## ✨ Website Experience
+
+The website is designed to feel like the event itself — interactive, energetic, slightly chaotic, and beginner-friendly.
+
+### 🎬 Cinematic Hero
+
+The landing experience starts with a cinematic AI/coding visual that transitions into the main event identity.
+
+The hero includes:
+
+**CODE MEETS AI**  
+**+ A LITTLE BIT OF CHAOS 💀**
+
+followed by the event messaging and CTA.
+
+### 🧪 Things You'll Play With
+
+An interactive overview of the technologies and concepts participants will explore during the event.
+
+### 💻 VS Code / Coding Experience
+
+A beginner-friendly visual flow introducing the basic building experience without overwhelming technical jargon.
+
+### 🧠 Who Is This For?
+
+A relatable section designed specifically around students with different levels of technical experience.
+
+### 💀 Side Effects May Include
+
+Possible side effects of attending:
+
+- Opening VS Code for no reason
+- Asking AI to fix AI-generated code
+- Saying "it was working 2 minutes ago"
+- Making your first website
+- Getting emotionally attached to code
+- Debugging at unnecessary hours
+- Saying **"wait... I actually understand this"**
+
+---
+
+## ⚡ Interactive CTA
+
+The website contains synchronized **"I'M IN 🚀"** / **"LET'S DO THIS 🚀"** CTAs.
+
+Once a visitor expresses interest:
+
+- The CTA becomes disabled
+- All other CTAs synchronize automatically
+- A smooth notification appears:
+  
+  > **You will be notified soon**
+
+- Interest registration is tracked through the application's API
+
+The interaction is designed to prevent multiple registrations from the same browser session.
+
+---
+
+## 📱 Responsive Design
+
+The website is designed to work across:
+
+- 🖥️ Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📲 Tablet
+
+The layout adapts to different viewport sizes while maintaining the visual identity and interaction patterns of the desktop experience.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+
+### Animation & Interaction
+
+- **Framer Motion**
+- CSS animations
+- Responsive interactions
+
+### Icons
+
+- **Lucide React**
+
+### Deployment
+
+- **Vercel**
+
+### Version Control
+
+- **Git**
+- **GitHub**
+
+---
+
+## 📂 Project Structure
+
+```text
+Code_Meets_AI/
+│
+├── public/
+│   └── assets/
+│
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── interest/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── Hero.tsx
+│       ├── WhatIsThis.tsx
+│       ├── ThingsYoullPlayWith.tsx
+│       ├── VsCodeBasics.tsx
+│       ├── WhoIsThisFor.tsx
+│       ├── SideEffects.tsx
+│       ├── FinalCTA.tsx
+│       └── ...
+│
+├── package.json
+├── package-lock.json
+├── next.config.ts
+├── tsconfig.json
+└── README.md
