@@ -181,6 +181,8 @@ Code_Meets_AI/
 ├── tsconfig.json
 └── README.md
 
+```
+
 ## 🎨 Design Philosophy
 
 The website intentionally avoids the typical:
