@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNotification } from "./NotificationContext";
+import PosterViewer from "./PosterViewer";
 
 export default function Hero() {
   const { isInterested, handleInterest, isLoading } = useNotification();
+  const [isPosterOpen, setIsPosterOpen] = useState(false);
+
   return (
     <section className="relative min-h-[100dvh] md:min-h-[100vh] flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image — always visible, pointer-events-none */}
@@ -49,7 +53,7 @@ export default function Hero() {
           </p>
         </div>
 
-        <div className="mt-5 md:mt-12 flex justify-center animate-hero-cta">
+        <div className="mt-5 md:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-hero-cta">
           <motion.button
             whileTap={!isInterested ? { scale: 0.95 } : {}}
             onClick={handleInterest}
@@ -65,6 +69,16 @@ export default function Hero() {
             )}
             <span className={`relative z-10 flex items-center transition-colors duration-300 ${!isInterested && "md:group-hover:text-white"}`}>
               {isInterested ? "[ ✓ I'M IN ]" : "[ I'M IN 🚀 ]"}
+            </span>
+          </motion.button>
+
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsPosterOpen(true)}
+            className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-8 md:py-4 text-sm md:text-lg font-bold rounded-full overflow-hidden transition-all duration-300 bg-transparent text-white border border-white/20 hover:border-brand-purple/50 hover:bg-white/5"
+          >
+            <span className="relative z-10 flex items-center transition-colors duration-300 group-hover:text-brand-purple">
+              [ VIEW POSTER 📄 ]
             </span>
           </motion.button>
         </div>
@@ -85,6 +99,12 @@ export default function Hero() {
         <p>  "errors": 99</p>
         <p>{"}"}</p>
       </div>
+
+      {/* Poster Modal */}
+      <PosterViewer 
+        isOpen={isPosterOpen} 
+        onClose={() => setIsPosterOpen(false)} 
+      />
     </section>
   );
 }
