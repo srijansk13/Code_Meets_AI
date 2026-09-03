@@ -19,9 +19,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "What Is This?", href: "#what-is-this" },
-    { name: "Things You'll Play With", href: "#things-to-play" },
-    { name: "Who Is This For?", href: "#who-is-this" },
+    { name: "What Is This?", href: "/#what-is-this" },
+    { name: "Things You'll Play With", href: "/#things-to-play" },
+    { name: "Who Is This For?", href: "/#who-is-this" },
+    { name: "Core Team", href: "/team" },
   ];
 
   return (
@@ -34,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="glass-panel flex items-center justify-between px-4 md:px-6 py-2.5 md:py-3">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 md:gap-3 text-base md:text-xl font-bold tracking-tight group">
+          <a href="/" className="flex items-center gap-2 md:gap-3 text-base md:text-xl font-bold tracking-tight group">
             <div className="w-[28px] h-[28px] md:w-[38px] md:h-[38px] rounded-full overflow-hidden border border-white/20 shadow-[0_0_10px_rgba(0,240,255,0.2)] group-hover:shadow-[0_0_15px_rgba(139,92,246,0.4)] group-hover:scale-105 transition-all duration-300">
               <img src="/assets/code-ai-chaos-hero.jpg" alt="CODE MEETS AI" className="w-full h-full object-cover" />
             </div>

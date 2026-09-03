@@ -99,7 +99,7 @@ export default function PosterViewer({ isOpen, onClose }: PosterViewerProps) {
 
             {/* QR #2 (Right - Social Media) */}
             <a
-              href="https://www.instagram.com/technical__event20?igsi=MTBjYndpcnJwZ2RsNA=="
+              href="https://www.instagram.com/code_meets_ai17?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="absolute z-10 group"

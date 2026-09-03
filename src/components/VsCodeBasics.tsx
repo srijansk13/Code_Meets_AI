@@ -81,9 +81,9 @@ const slideVariants = {
 
 const spring = {
   type: "spring" as const,
-  stiffness: 320,
-  damping: 30,
-  mass: 0.9,
+  stiffness: 500,
+  damping: 32,
+  mass: 0.6,
 };
 
 // ─── Re-usable card face ──────────────────────────────────────────────────────
@@ -151,8 +151,8 @@ export default function VsCodeBasics() {
     _: unknown,
     info: { offset: { x: number }; velocity: { x: number } }
   ) => {
-    if ((info.offset.x < -40 || info.velocity.x < -400) && next) goTo(activeIndex + 1);
-    else if ((info.offset.x > 40 || info.velocity.x > 400) && prev) goTo(activeIndex - 1);
+    if ((info.offset.x < -20 || info.velocity.x < -200) && next) goTo(activeIndex + 1);
+    else if ((info.offset.x > 20 || info.velocity.x > 200) && prev) goTo(activeIndex - 1);
   };
 
   return (
