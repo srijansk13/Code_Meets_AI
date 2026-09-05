@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useNotification } from "./NotificationContext";
 import PosterViewer from "./PosterViewer";
@@ -81,6 +82,15 @@ export default function Hero() {
               [ VIEW POSTER 📄 ]
             </span>
           </motion.button>
+
+          <Link
+            href="/team"
+            className="group relative inline-flex items-center justify-center px-5 py-2.5 md:px-8 md:py-4 text-sm md:text-lg font-bold rounded-full overflow-hidden transition-all duration-300 bg-transparent text-white border border-white/20 hover:border-brand-cyan/50 hover:bg-white/5 hover:scale-105"
+          >
+            <span className="relative z-10 flex items-center transition-colors duration-300 group-hover:text-brand-cyan">
+              [ VIEW CORE TEAM → ]
+            </span>
+          </Link>
         </div>
       </div>
 

@@ -14,56 +14,90 @@ const teamMembers = [
     name: "Akash Gupta",
     image: "/team/Akash Gupta (1).jpeg",
     role: "Software & Web Development",
-    contact: { linkedin: "https://www.linkedin.com/in/akash-gupta6300?utm_source=share_via&utm_content=profile&utm_medium=member_android", phone: "+916300761220" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/akash-gupta6300?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      phone: "+916300761220"
+    }
   },
   {
     id: 2,
     name: "Srijan Kumar",
     image: "/team/Srijan Kumar (2).jpeg",
     role: "Software & Web Development",
-    contact: { linkedin: "https://www.linkedin.com/in/srijan-kumar-sk13/", phone: "+918019682137" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/srijan-kumar-sk13/",
+      phone: "+918019682137"
+    }
   },
   {
     id: 3,
     name: "Aaditya Varma",
     image: "/team/Aaditya Varma (3).jpeg",
     role: "Motion & Visual Experiences",
-    contact: { linkedin: "https://www.linkedin.com/in/aaditya-varma-aa20ab382?utm_source=share_via&utm_content=profile&utm_medium=member_android", phone: "+917207870088" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/aaditya-varma-aa20ab382?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      phone: "+917207870088"
+    }
   },
   {
     id: 4,
     name: "D. Durga Akhil",
     image: "/team/Durga Akhil (4).jpeg",
     role: "UI/UX & Experience Design",
-    contact: { linkedin: "https://www.linkedin.com/in/d-durga-akhil112?utm_source=share_via&utm_content=profile&utm_medium=member_android", phone: "+919849657534" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/d-durga-akhil112?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      phone: "+919849657534"
+    }
   },
   {
     id: 5,
     name: "Karthikeya Gupta",
     image: "/team/Karthikeya Gupta (5).jpeg",
     role: "Video Editing & Post-Production",
-    contact: { linkedin: "https://www.linkedin.com/in/karthikeya-gupta-g26?utm_source=share_via&utm_content=profile&utm_medium=member_android", phone: "+919381388393" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/karthikeya-gupta-g26?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      phone: "+919381388393"
+    }
   },
   {
     id: 6,
-    name: "TEAM MEMBER",
-    image: null,
-    role: "COMING SOON",
-    contact: { linkedin: "", phone: "" }
-  },
-  {
-    id: 7,
     name: "Pradeep K",
     image: "/team/Pradeep (7).jpeg",
     role: "Quality Assurance & Testing",
-    contact: { linkedin: "https://www.linkedin.com/in/pradeep-k-5b3400380?utm_source=share_via&utm_content=profile&utm_medium=member_android", phone: "+918712373163" }
+    contact: {
+      linkedin: "https://www.linkedin.com/in/pradeep-k-5b3400380?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      phone: "+918712373163"
+    }
   },
   {
-    id: 8,
+    id: 7,
     name: "Omprakash",
     image: "/team/Omprakash (8).jpeg",
     role: "Production & Cinematography",
-    contact: { linkedin: "", phone: "+918639593894" }
+    contact: {
+      linkedin: "",
+      phone: "+918639593894"
+    }
+  },
+  {
+    id: 8,
+    name: "Tulasi Manohar",
+    image: "/team/Tulasi Manohar (6).jpeg",
+    role: "Content & Script Development",
+    contact: {
+      linkedin: "https://www.linkedin.com/in/tulasi-manohar-a-ba8017380/",
+      phone: "+919441775768"
+    }
+  },
+  {
+    id: 9,
+    name: "Muntaz",
+    image: "/team/Muntaz (9).jpeg",
+    role: "Registrations & Participant Support",
+    contact: {
+      linkedin: "https://www.linkedin.com/in/muntaz19/",
+      phone: ""
+    }
   }
 ];
 
@@ -79,25 +113,15 @@ export default function TeamCarousel() {
         {duplicatedTeam.map((member, index) => (
           <div
             key={`${member.id}-${index}`}
-            className={`flex-none w-[250px] md:w-[300px] h-[360px] md:h-[420px] group relative overflow-hidden flex flex-col rounded-2xl border transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 ${member.image ? 'bg-white/5 border-white/5 hover:border-brand-cyan/30 hover:shadow-[0_0_40px_rgba(0,240,255,0.1)]' : 'bg-black/40 border-white/5 shadow-inner'}`}
+            className="flex-none w-[250px] md:w-[300px] h-[360px] md:h-[420px] group relative overflow-hidden flex flex-col rounded-2xl border transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 bg-white/5 border-white/5 hover:border-brand-cyan/30 hover:shadow-[0_0_40px_rgba(0,240,255,0.1)]"
           >
             {/* Image Section */}
             <div className="relative w-full h-full overflow-hidden flex flex-col justify-end">
-              {member.image ? (
-                <img
-                  src={member.image}
-                  alt={`${member.name} — Core Team`}
-                  className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                />
-              ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center opacity-30">
-                  <div className="w-14 h-14 mb-3 rounded-full border border-white/20 flex items-center justify-center">
-                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                  </div>
-                  <div className="font-mono tracking-widest text-xs text-white">TEAM MEMBER</div>
-                  <div className="font-mono tracking-widest text-xs text-white/50 mt-1">COMING SOON</div>
-                </div>
-              )}
+              <img
+                src={member.image}
+                alt={member.name}
+                className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              />
               
               {/* Gradient overlay — image fades into dark info panel */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#111116] via-[#111116]/75 to-transparent" style={{ top: '35%' }} />
