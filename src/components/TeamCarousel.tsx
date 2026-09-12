@@ -23,7 +23,7 @@ const teamMembers = [
     id: 2,
     name: "Srijan Kumar",
     image: "/team/Srijan Kumar (2).jpeg",
-    role: "Software & Web Development",
+    role: "Product Engineering & Technology",
     contact: {
       linkedin: "https://www.linkedin.com/in/srijan-kumar-sk13/",
       phone: "+918019682137"
