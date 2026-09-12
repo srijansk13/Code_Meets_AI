@@ -55,7 +55,7 @@ const teamMembers = [
     image: "/team/Karthikeya Gupta (5).jpeg",
     role: "Video Editing & Post-Production",
     contact: {
-      linkedin: "https://www.linkedin.com/in/karthikeya-gupta-g26?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      linkedin: "https://www.linkedin.com/in/karthikeya-guptx-32022b436",
       phone: "+919381388393"
     }
   },
